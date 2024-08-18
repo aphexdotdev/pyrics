@@ -19,5 +19,5 @@ def fetchSong(song, printSpeed, artist = None):
     
     response = json.loads(request.text)
     
-    printLine(f"Playing '{color['green']}{response['title']}{endColorLine}' by {color['bold']}{response['artist']}{endColorLine}\n", pause=1000, speed=printSpeed)
-    printLine(response["lyrics"])
+    printLine(f"Playing {color['green']}{response['title']}{endColorLine} by {color['bold']}{response['artist']}{endColorLine}\n", pause=1000, speed=printSpeed)
+    printLine(response["lyrics"], speed=printSpeed)

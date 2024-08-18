@@ -1,4 +1,3 @@
-from colors import color
 import time
 import sys 
 
@@ -14,8 +13,8 @@ def printLine(str, speed = None, pause = None):
     # Convert to ms
     speed = speed / 1000 
     pause = pause / 1000
-
-    
+    print(speed)
+   
     # Printing
     for letter in str:
     
